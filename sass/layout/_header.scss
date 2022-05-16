@@ -1,0 +1,125 @@
+
+.header {
+    border-bottom: 1px solid #ECECEC;
+}
+
+.header {
+    .container {
+    display: flex;
+    align-items: center;
+}
+}
+
+.site-nav  {
+    display: flex;
+}
+
+.site-nav__item{
+    margin-right: 50px; 
+}
+
+.site-nave__link {
+    color: $title-text-color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    display: block;
+    position: relative;
+    padding-top: 32px;
+    padding-bottom: 32px; 
+    transition-property: color, background-color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+    color: $accent-color;
+    fill: $accent-color;
+}
+
+&:not(:last-child) {
+    margin-right: 50px;
+}
+}
+
+
+.current {
+    color: transparent;
+
+    &:hover,
+    &:focus {
+    color: $accent-color;
+}
+    &:after {
+    content:'';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $accent-color;
+}
+}
+
+.header__contacts {
+    margin-left: auto;
+}
+
+.contacts {
+    display: flex;
+}  
+
+.site-contacts {
+    display: flex;
+    margin-left: auto;
+}
+
+.site-contacts__item {
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+    fill: $accent-color;
+}
+    & + & {
+    margin-left: 30px;
+}
+}
+
+.site-contacts__link{
+    color: $primary-text-color;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover, 
+    &:focus {
+    color: $accent-color; 
+}
+}
+
+
+
+.site-contacts__mail {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    color: $primary-text-color;
+}
+
+.site-contacts__tel {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    color: $primary-text-color;
+}
+

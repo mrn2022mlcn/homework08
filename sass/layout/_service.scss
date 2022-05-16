@@ -1,0 +1,51 @@
+.service-title,
+.team-title, 
+.section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $title-text-color; 
+}
+.service-title {
+    margin-bottom: 50px;
+}
+.service {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.service-list {
+    display: flex;
+}
+.service-list .list {
+    padding-bottom: 94px;
+}
+
+
+.img-item:not(:last-child) {
+   margin-right: 30px; 
+}
+.service-font {
+    position: relative;
+}
+
+.service-text {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    min-height: 70px;
+    padding-top: 27px;
+    padding-right: 82px;
+    padding-bottom: 27px;
+    padding-left: 82px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    background: rgba(47, 48, 58, 0.8);
+    color: $primary-bg-color;
+}
