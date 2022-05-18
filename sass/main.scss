@@ -1,9 +1,14 @@
+@import "./utils/variables";
 @import "./base/common";
+@import "./utils/visually-hidden";
 @import "./base/normalize";
+@import "./utils/fonts";
+
 @import "./components/container";
 @import "./components/header-logo";
 @import "./components/hero-btn";
 @import "./components/modal";
+
 @import "./layout/benefits";
 @import "./layout/clients";
 @import "./layout/footer";
@@ -12,8 +17,8 @@
 @import "./layout/portfolio";
 @import "./layout/service";
 @import "./layout/team";
-@import "./utils/fonts";
-@import "./utils/variables";
-@import "./utils/visually-hidden";
+
+
+
 
 
