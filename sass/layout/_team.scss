@@ -5,20 +5,30 @@
 }
 
 .section-title {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
 }
 
 .team-list {
-    display: flex;
+    // display: flex;
     list-style: none;
+    margin-bottom: -30px;
 }
 
-.team-item:not(:last-child) {
-    margin-right: 30px; 
+.team-item {
+    margin-bottom: 30px;
 }
+
+// .team-item:not(:last-child) {
+//     margin-right: 30px; 
+// }
 
 .team-list .title {
-    color: $title-text-color;
+    color: var(--title-text-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;     
@@ -26,7 +36,7 @@
 
     
 .team-list .text {
-    color: $primary-text-color;
+    color: var(--primary-text-color);
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
@@ -42,7 +52,7 @@
 .team-container {
     padding-top: 30px;
     padding-bottom: 30px;
-    background-color: $primary-bg-color;
+    background-color: var(--primary-bg-color);
 } 
 
 .team-soc-list {
@@ -63,17 +73,15 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     &:hover, 
     &:focus {
-    background-color: $accent-color;
+    background-color: var(--accent-color);
 }
 }
-
-
 
 .team-soc-icon {
     fill:#AFB1B8 ;
     .team-soc-link:hover &,
     .team-soc-link:focus & {
-    fill: $primary-bg-color;
+    fill: var(--primary-bg-color);
 }
 }
 

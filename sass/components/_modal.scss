@@ -29,7 +29,7 @@
          0px 1px 1px rgba(0, 0, 0, 0.14), 
          0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 4px;
-        background-color: $primary-bg-color;
+        background-color: var(--primary-bg-color);
         transform: translate(-50%, -50%) scale(1) rotate(0);
         transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
        
@@ -45,7 +45,7 @@
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-color: $primary-bg-color;
+    background-color: var(--primary-bg-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
     transition-property: fill;
@@ -57,7 +57,7 @@
     width: 11px;
     height: 11px;
     &:hover {
-    fill: $accent-color;
+    fill: var(--accent-color);
     }
 }
 
@@ -70,7 +70,7 @@
     line-height: 1.15;
     text-align: center;
     letter-spacing: 0.03em;
-    color: $title-text-color;             
+    color: var(--title-text-color);             
 }
 
 .modal-input{
@@ -84,10 +84,10 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     &:focus {
-        border-color: $accent-color;
+        border-color: var(--accent-color);
     }
     &:focus + .modal-logo {
-      fill: $accent-color;
+      fill: var(--accent-color);
     }
 }
 
@@ -118,7 +118,7 @@
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
-    color: $primary-text-color;
+    color: var(--primary-text-color);
 
 }
 
@@ -142,7 +142,7 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: $primary-text-color
+    color: var(--primary-text-color);
 }
 
 .check-text {
@@ -151,7 +151,7 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     align-items: center;
-    color: $primary-text-color;
+    color: var(--primary-text-color);
     display: flex;
     &::before {
     content: '';
@@ -167,7 +167,7 @@
 }
 
 .modal-check:checked + .check-text::before {
-    background-color: $accent-color;
+    background-color: var(--accent-color);
     border: none;
     background-image: url(../images/Vectormodal.svg);
     background-repeat: no-repeat;
@@ -175,7 +175,7 @@
 }
 
 .modal-link {
-    color: $accent-color;
+    color: var(--accent-color);
 }
 
 .submit-btn {
@@ -191,8 +191,8 @@
     font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.06em;
-    color: $primary-bg-color;
-    background-color: $accent-color;
+    color: var(--primary-bg-color);
+    background-color: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     transition-property: background-color;

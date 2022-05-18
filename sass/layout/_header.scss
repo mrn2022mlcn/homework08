@@ -19,7 +19,7 @@
 }
 
 .site-nave__link {
-    color: $title-text-color;
+    color: var(--title-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -34,8 +34,8 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
-    color: $accent-color;
-    fill: $accent-color;
+    color: var(--accent-color);
+    fill: var(--accent-color);
 }
 
 &:not(:last-child) {
@@ -49,7 +49,7 @@
 
     &:hover,
     &:focus {
-    color: $accent-color;
+    color: var(--accent-color);
 }
     &:after {
     content:'';
@@ -60,7 +60,7 @@
     width: 100%;
     height: 4px;
     border-radius: 2px;
-    background-color: $accent-color;
+    background-color: var(--accent-color);
 }
 }
 
@@ -83,7 +83,7 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
-    fill: $accent-color;
+    fill: var(--accent-color);
 }
     & + & {
     margin-left: 30px;
@@ -91,7 +91,7 @@
 }
 
 .site-contacts__link{
-    color: $primary-text-color;
+    color: var(--primary-text-color);
     text-decoration: none;
     font-weight: 500;
     font-size: 14px;
@@ -103,7 +103,7 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     &:hover, 
     &:focus {
-    color: $accent-color; 
+    color: var(--accent-color); 
 }
 }
 
@@ -113,13 +113,13 @@
     width: 16px;
     height: 12px;
     margin-right: 10px;
-    color: $primary-text-color;
+    color: var(--primary-text-color);
 }
 
 .site-contacts__tel {
     width: 10px;
     height: 16px;
     margin-right: 10px;
-    color: $primary-text-color;
+    color: var(--primary-text-color);
 }
 

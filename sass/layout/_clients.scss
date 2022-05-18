@@ -16,7 +16,7 @@
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
-    color: $title-text-color;
+    color: var(--title-text-color);
     margin-bottom: 50px; 
 }
 
@@ -34,7 +34,7 @@
     background-position: center; 
     &:hover,
     &:focus {
-    border: 1px solid $accent-color;
+    border: 1px solid var(--accent-color);
 }
     &:not(:last-child){
     margin-right: 30px;
@@ -53,7 +53,7 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     &:hover, 
     &:focus {
-    fill: $accent-color;
+    fill: var(--accent-color);
 }
 }
 
