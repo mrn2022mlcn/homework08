@@ -1,33 +1,74 @@
 .benefits {
-    padding-top: 94px;
+    padding-bottom: 60px;
+    @include desktop {
+        padding-bottom: 94px;
+    }
 }
 .benefits-list {
-    display: flex;
+    margin-bottom: -30px;
+    @include tablet {
+    display: flex;  
+    flex-wrap: wrap;
+    margin-bottom: -30px;
+    margin-left: -30px; 
+    }
 }
 .benefits-item {
-    width: 270px;
-    &:not(:last-child){
-    margin-right: 30px;
+    margin-bottom: 30px;
+    height: 120px;
+    @include tablet {
+        width: calc(100% / 2 - 30px);
+        margin-left: 30px;
+     }
+     @include desktop {
+         width: calc(100% / 4 - 30px);
+         margin-left: 30px;
+      }
+    width: 450px;
+    @include tablet {
+        width: 355px;
+    }
+    @include desktop {
+        width: 270px;
+    }
 }
-}
-
 
 .benefits-logo-list {
-    display: flex;
-    justify-content: center;
+    margin-bottom: -30px;
+    @include tablet {
+      display: flex;  
+      flex-wrap: wrap;
+      margin-bottom: -30px;
+      margin-left: -30px;
+    }
 }
 
 .benefits-logo-item {
-    width: 270px;
+    margin-bottom: 30px;
+    width: 450px;
+    @include tablet {
+        width: 355px;
+    }
+    @include desktop {
+        width: 270px;
+    }
     height: 120px;
     border-radius: 4px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
+    // display:flex;
+    // justify-content: center;
+    // align-items: center;
     background-color: #F5F4Fa;
-    &:not(:first-child){
     margin-left: 30px;
+    @include tablet {
+        width: calc(100% / 2 - 30px); 
+    }
+    @include desktop {
+        width: calc(100% / 4 - 30px); 
+    }
 }
+
+.benefits-icon {
+    margin: 25px auto;
 }
 
 .benefits-title {
@@ -37,11 +78,19 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
+    text-align: center;
     text-transform: uppercase;
     color: var(--title-text-color);
 }
 
 .benefits-text { 
+    width: 450px;
+    @include tablet {
+        width: 355px;
+    }
+    @include desktop {
+        width: 270px;
+    }
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;

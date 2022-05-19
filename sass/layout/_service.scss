@@ -12,6 +12,12 @@
     margin-bottom: 50px;
 }
 .service {
+    @include mobile {
+    display: none;  
+    }
+    @include tablet {
+    display: none;   
+    }
     padding-top: 94px;
     padding-bottom: 94px;
 }
