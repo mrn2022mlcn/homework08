@@ -1,19 +1,18 @@
 .hero {
-    margin-top: 60px;
-    margin-bottom: 60px;
     padding-top: 118px;
     padding-bottom: 118px;
-    @include desktop {
-        padding-top: 200px;
-        padding-bottom: 200px;
-    }
     max-width: 1600px;
-    min-height: 400px; 
+    height: 600px; margin-left: auto;
     margin: 0 auto;
     background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img\ font.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    @include desktop {
+        max-width: 1200px;
+        padding-top: 200px;
+        padding-bottom: 200px;
+      }
 }
 
 .hero--font {
@@ -29,24 +28,19 @@
     margin-left: auto;
     color: var(--primary-bg-color);
     max-width: 360px;
-    @include desktop {
-        max-width: 700px;
-    }
-    font-style: normal;
-    font-weight: 900px;
+    font-style: black;
+    font-weight: 900;
     font-size: 26px;
-    line-height: 1.62;
+    line-height: 1.38;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    padding-bottom: 40px; 
+    padding-bottom: 30px;
     @include desktop {
         font-size: 44px;
-        line-height: 1.16;
+        line-height: 1.36;
+        max-width: 700px;
     }
 }
-   
-    
-
 
 
