@@ -1,16 +1,36 @@
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
+    max-width: 100%;
+    text-align: center;
+}
+
+.footer .container{
+    display: block;
+    @include tablet {
+        display: flex;
+    }
+    @include desktop {
+        display: flex;
+    }
+}
+
+.address-content {
+    margin-bottom: 60px;
+    text-align: center;
+    @include desktop {
+        width:calc(25% - 15px);
+    }
 }
 
 .address-content__logo {
     color: var(--primary-bg-color);
     margin-bottom: 20px;
-    margin-right: 93px;
+    text-align: center;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    font-size: 24px;
+    line-height: 1.16;
     text-decoration: none;
 }
 
@@ -21,6 +41,7 @@
 .footer--font {
     background-color: #2F303A;
 }
+
 
 .address-content__link {
     color: rgba(255, 255, 255, 0.6);
@@ -53,6 +74,14 @@
     margin-top: 9px;
 }
 
+.soc {
+    margin-bottom: 60px;
+    text-align: center;
+    @include desktop {
+      flex-grow: 1;  
+    }
+}
+
 .soc__join {
     color: var(--primary-bg-color);
     font-family: var(--font-family);
@@ -64,16 +93,9 @@
     margin-bottom: 20px;
 }
 
-.footer .container{
-    display: flex;  
-}
-
-.address-content {
-    width:calc(25% - 15px);
-}
-
-.soc {
-    flex-grow: 1;
+.soc__list {
+    display: flex;
+    align-items: center;  
 }
 
 .soc__link {
@@ -102,9 +124,9 @@
 }
 }
 
-.soc__list {
-    display:flex;
-    align-items: center;  
+
+.subscribe {
+    text-align: center;
 }
 
 .subscribe__post {
@@ -122,13 +144,16 @@
     margin-bottom: 20px;
 }
 
-.footer-btn__btn {
-    position: relative;
-}
-
 .footer-btn__input {
     padding: 15px 16px;
-    width: 358px;
+    margin-bottom: 20px;
+    width: 100%;
+    @include tablet {
+        width: 450px;
+    }
+    @include desktop {
+        width: 358px;
+    }
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
@@ -140,6 +165,11 @@
     align-items: center;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-btn__btn {
+    width: 100%;
+    position: relative;
 }
 
 .footer-btn__sign {
@@ -158,7 +188,7 @@
 }
 
 .footer-btn__icon-send {
-    position:absolute;
+    position: absolute;
     top: 50%;
     right: 28px;
     transform: translateY(-50%);

@@ -36,6 +36,10 @@
 }
 @include tablet {
     width: calc(100% / 3 - 30px);
+    // .clients-item:hover,
+    // .clients-item:focus{
+    //     border: 1px solid var(--accent-color);
+    // }
 }
 @include desktop {
     display: block;
