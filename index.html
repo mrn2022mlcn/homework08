@@ -55,7 +55,7 @@
   <main>
 
       <!--Герой-->
- <section class="hero hero--font"> 
+ <!-- <section class="hero hero--font"> 
      
     <div class="container">
         <h1 class="container__hero-title">Эффективные решения
@@ -63,7 +63,7 @@
         <button data-modal-open type="button" class="container__hero-btn">Заказать услугу</button>
     </div>
 
- </section>
+ </section> -->
 
 <!--Преимущества-->
 <!-- <section class="benefits">
@@ -150,12 +150,39 @@
 </section> -->
 
 <!-- Команда -->
-<!-- <section class="section-team">
+<section class="section-team">
     <div class="container">
     <h2 class="section-title">Наша команда</h2>
     <ul class="team-list list">
         <li class="team-item shadow">
-          <img src="./images/icon2.1.jpg" alt="Игорь Демьяненко" width="270">
+            <picture>
+                <source
+                srcset="
+          ./images/team-product-desk.jpg 1x,
+          ./images/team-product-desk2x.jpg 2x
+          "
+        media="(min-width: 1200px)"
+          />
+             <source
+            srcset="
+        ./images/team-product-tab.jpg 1x,
+        ./images/team-product-tab2x.jpg 2x
+        "
+        media="(min-width: 768px)"
+        />
+                <source
+                srcset="
+          ./images/team-product.jpg 1x,
+          ./images/team-product2x.jpg 2x
+          "
+        media="(min-width: 320px)"
+          />
+        
+          <img 
+           src="./images/team-product.jpg" 
+           alt="Игорь Демьяненко" 
+           width="270">
+           </picture>
             <div class="team-container">
                   <h3 class="title">Игорь Демьяненко</h3>
                   <p lang="en" class="text">Product Designer</p>
@@ -191,7 +218,12 @@
         </li>
 
         <li class="team-item shadow">
-           <img src="./images/icon2.2.jpg" alt="Ольга Репина" width="270">
+           <img 
+           srcset="
+          ./images/team-frontend.jpg 1x,
+          ./images/team-frontend2x.jpg 2x
+          "
+           src="./images/team-frontend.jpg" alt="Ольга Репина" width="270">
              <div class="team-container">
                   <h3 class="title">Ольга Репина</h3>
                   <p lang="en" class="text">Frontend Developer</p>
@@ -229,7 +261,12 @@
         </li>
 
         <li class="team-item shadow">
-            <img src="./images/icon2.3.jpg" alt="Николай Тарасов" width="270">
+            <img 
+            srcset="
+            ./images/team-marketing.jpg 1x,
+            ./images/team-marketing2x.jpg 2x
+            "
+            src="./images/team-marketing.jpg" alt="Николай Тарасов" width="270">
               <div class="team-container">
                   <h3 class="title">Николай Тарасов</h3>
                   <p lang="en" class="text">Marketing</p>
@@ -266,7 +303,12 @@
         </li>
 
         <li class="team-item shadow">
-            <img src="./images/icon2.4.jpg" alt="Михаил Ермаков" width="270">
+            <img 
+            srcset="
+            ./images/team-designer.jpg 1x,
+            ./images/team-designer2x.jpg 2x
+            "
+            src="./images/team-designer.jpg" alt="Михаил Ермаков" width="270">
               <div class="team-container">
                   <h3 class="title">Михаил Ермаков</h3>
                   <p lang="en" class="text">UI Designer</p>
@@ -302,7 +344,7 @@
         </li>
    </ul>
 </div>
-</section> -->
+</section>
 
 <!-- Постоянные клиенты -->
 

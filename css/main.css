@@ -1391,13 +1391,13 @@ img {
   color: var(--primary-bg-color);
 }
 
-.section-team {
+grr.section-team {
   background-color: #F5F4FA;
   padding-top: 60px;
   padding-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
-  .section-team {
+  grr.section-team {
     padding-top: 94px;
     padding-bottom: 94px;
   }
