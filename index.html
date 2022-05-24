@@ -54,13 +54,14 @@
      </ul>
     </div>
      </div>
-    <div class="mob-menu">
+    <div class="mob-menu is-hidden">
         <div class="container">
         <button type="button" class="menu-close-btn">
             <svg class="icon-close-btn" width="40" height="40">
             <use href="./images/symbol-defs.svg#icon-close_40px"></use>
            </svg>
         </button>
+        <div class="mob-menu-top">
             <ul class="site-nav-mob list">
                 <li class="site-nav-mob__item">
                     <a href="" class="site-nav-mob__link">Студия</a></li>
@@ -70,7 +71,8 @@
                     <a href="" class="site-nav-mob__link">Контакты</a>
                    </li>
             </ul>
-            
+        </div>
+       <div class="mob-menu-bottom"> 
           <div class="mob-contacts header__contacts">
      <ul class="mob-site-contacts list">
          <li class="mob-site-contacts__item">
@@ -84,6 +86,7 @@
          </li> 
      </ul>
     </div>
+</div> 
 
     <ul class="mob-soc__list list">
         <li class="mob-soc__item">
@@ -478,25 +481,18 @@
 
 <!--Футер-->
 
-<!-- <footer class="footer footer--font">
-    <div class="container">
-
+<footer class="footer footer--font">
+    <div class="container position">
     <div class="address-content">
     <a href="/" class="logo address-content__logo"><span>Web</span>Studio</a>
     <address class="address-content__text">
-      г. Киев, пр-т Леси Украинки, 26
-     </address>
-
-     <ul class="address-content__contacts list">
-        <li class="address-content__item">
+      <p class="address-text">г. Киев, пр-т Леси Украинки, 26</p>
             <a href="mailto:info@devstudio.com" class="address-content__link">info@devstudio.com</a><br>
-        </li>
-        <li class="address-content__item">
+        
             <a href="tel:+380961111111" class="address-content__link">+38 096 111 11 11</a>
-        </li> 
-     </ul>
+       
+     </address>
     </div>
-
     <div class="soc">
             <h3 class="soc__join">Присоединяйтесь</h3>
         <ul class="soc__list list">
@@ -530,12 +526,9 @@
             </li>
         </ul>
     </div>
-
     <div class="subscribe subscribe__post">
         <h3 class="subscribe__join">Подпишитесь на рассылку</h3>
         <form>
-            <div class="footer-btn__btn">
-
         <label for="subscribe-mail"></label>
         <input
         type="email"
@@ -544,20 +537,16 @@
         id="subscribe-mail"
         placeholder="E-mail" 
         /> 
-   
             <button type="submit" 
-            class="footer-btn__sign">Подписаться</button>
-         
-            <svg class="footer-btn__icon-send" width="24" height="24">
+            class="footer-btn__sign"><svg class="footer-btn__icon-send" width="24" height="24">
                 <use href="./images/icon-sendopt.svg#icon-icon-send"></use>
-            </svg>
-      
-    </div>
+            </svg>Подписаться
+             </button>
         </form>
     </div>
     
     </div>
-</footer> -->
+</footer>
 
 <!-- Модальное окно -->
 
@@ -653,6 +642,7 @@
 </div>
 
 <script src="./js/modal.js"></script>
+<script src="./js/menu.js"></script>
 
 </body>
 </html>
