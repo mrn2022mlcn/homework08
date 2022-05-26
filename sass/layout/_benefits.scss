@@ -1,16 +1,15 @@
 .benefits {
     padding-top: 60px;
-    padding-bottom: 60px;
-    @include desktop {
-        padding-top: 94px;
-        padding-bottom: 94px;
-    }
+    padding-bottom: 60px; 
+    // @media screen and (min-width: 1200px) {
+    // padding-top: 94px; 
+    // }   
 }
 
 .benefits-logo-list {
     margin-bottom: -30px;
     margin-left: -30px;
-    @include tablet {
+    @media screen and (min-width: 768px) {
       display: flex;  
       flex-wrap: wrap;
       margin-bottom: -30px;
@@ -19,37 +18,31 @@
 }
 
 .benefits-logo-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
     margin-bottom: 30px;
-    width: 450px;
-    @include tablet {
-        width: 355px;
-    }
-    @include desktop {
-        width: 270px;
-    }
     height: 120px;
     border-radius: 4px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
     background-color: #F5F4Fa;
     margin-left: 30px;
-    @include tablet {
+    @media screen and (min-width: 768px) {
         width: calc(100% / 2 - 30px); 
     }
-    @include desktop {
+    @media screen and (min-width: 1200px) {
         width: calc(100% / 4 - 30px); 
     }
 }
 
 .benefits-list {
     margin-bottom: -30px;
-    @include tablet {
+    @media screen and (min-width:768px) {
       display: flex;  
       flex-wrap: wrap;
       margin-left: -30px;
     }
-    @include desktop {
+    @media screen and (min-width: 1200px) {
         display: flex;  
         flex-wrap: wrap;
         margin-left: -30px;
@@ -59,11 +52,11 @@
 .benefits-item {
     margin-bottom: 30px;
     width: 450px;
-    @include tablet {
+    @media screen and (min-width: 768px){
         width: calc(100% / 2 - 30px); 
         margin-left: 30px;
     }
-    @include desktop {
+    @media screen and (min-width: 1200px) {
         width: calc(100% / 4 - 30px); 
         margin-left: 30px;
     }
@@ -78,10 +71,10 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-align: center;
-    @include tablet {
+    @media screen and (min-width: 768px) {
        text-align: left; 
     }
-    @include tablet {
+    @media screen and (min-width: 1200px)  {
         text-align: left; 
      }
     text-transform: uppercase;
@@ -91,11 +84,11 @@
 .benefits-text { 
     margin-bottom: 30px;
     width: 450px;
-    @include tablet {
+    @media screen and (min-width:768px)  {
         width: 355px;
         text-align: left; 
     }
-    @include desktop {
+    @media screen and (min-width:1200px) {
         width: 270px;
         text-align: left; 
     }

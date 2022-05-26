@@ -1,8 +1,8 @@
 .section-team {
-    background-color: #F5F4FA;
     padding-top: 60px;
     padding-bottom: 60px;
-    @include desktop {
+    background-color: #F5F4FA;
+    @media screen and (min-width: 1200px) {
         padding-top: 94px;
         padding-bottom: 94px;
      }
@@ -15,7 +15,7 @@
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
-    @include desktop {
+    @media screen and (min-width: 1200px) {
         font-size: 36px;
         line-height: 1.18;
      }
@@ -23,7 +23,7 @@
 
 .team-list {
     margin-bottom: -30px;
-    @include tablet {
+    @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
         margin-bottom: -30px;
@@ -34,11 +34,11 @@
 
 .team-item {
     margin-bottom: 30px;
-    @include tablet {
+    @media screen and (min-width: 768px) {
        width: calc(100% / 2 - 30px);
        margin-left: 30px;
     }
-    @include desktop {
+    @media screen and (min-width: 1200px) {
         width: calc(100% / 4 - 30px);
         margin-left: 30px;
      }

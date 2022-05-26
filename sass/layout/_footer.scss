@@ -1,11 +1,10 @@
 .footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding: 60px 15px;
     max-width: 100%;
     text-align: center;
 }
 
-    @include tablet {
+    @media screen and (min-width: 768px) {
 .position {
     display: flex;
     flex-wrap: wrap;
@@ -17,13 +16,7 @@
     align-items: baseline;
 }
 
-@include tablet {
-    .container {
-    width: 768px;
-}}
-
-
-@include tablet {
+@media screen and (min-width: 768px) {
     .address-content {
     margin-left: 76px;
 }
@@ -33,11 +26,14 @@
 .address-content {
     text-align: center;
     margin-bottom: 60px;
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
 }
 
 
 .address-content__logo {
-    display: block;
+    // display: block;
     margin-right: 0;
     margin-bottom: 20px;
     color: var(--primary-bg-color);
@@ -86,7 +82,7 @@
     letter-spacing: 0.03em;
     margin-top: 20px; 
 }
- @include tablet {
+ @media screen and (min-width: 768px) {
     soc {
     margin-right: 93px;
  } 
@@ -94,7 +90,7 @@
 
 .soc {
     margin-bottom: 60px;
-    @include desktop {
+    @media screen and (min-width: 1200px) {
       flex-grow: 1;  
     }
 }
@@ -150,7 +146,7 @@
     text-align: center;
 }
 
-@include tablet {
+@media screen and (min-width: 768px) {
    .subscribe__post {
     margin-left: 166px;
 } 
@@ -172,10 +168,10 @@
     margin-right: 12px;
     margin-bottom: 20px;
     width: 100%;
-    @include tablet {
+    @media screen and (min-width: 768px) {
         width: 450px;
     }
-    @include desktop {
+    @media screen and (min-width: 1200px) {
         width: 358px;
     }
     height: 50px;
@@ -212,5 +208,4 @@
 
 .footer-btn__icon-send {
     margin-left: 10px;
-    fill: var(--primary-bg-color);
-}
+    fill: var(--primary-bg-color);}

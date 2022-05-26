@@ -10,6 +10,12 @@
     align-items: center;
 }
 }
+.container {
+    padding: 16px 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 .menu-open-btn {
     display: flex;
     position: absolute;
@@ -20,6 +26,7 @@
     border: none;
     margin-left: auto;
     margin-bottom: 8px;
+    padding: 0;
     background-color: transparent;
     transition-property: fill;
     transition-duration: 250ms;
@@ -30,7 +37,6 @@
     }
 }
    
-
 .icon-open-btn {
     width: 40px;
     height: 40px;
@@ -41,6 +47,8 @@
 }
 .site-nav  {
     display: flex;
+    margin-left: auto;
+
 }
 
 .site-nav__item{
@@ -71,7 +79,6 @@
     margin-right: 50px;
 }
 }
-
 
 .current {
     color: transparent;
@@ -136,8 +143,6 @@
 }
 }
 
-
-
 .site-contacts__mail {
     width: 16px;
     height: 12px;
@@ -151,7 +156,9 @@
     margin-right: 10px;
     color: var(--primary-text-color);
 }
-
+.mob-menu .is-open {
+    transform: translateX(0);
+}
 .mob-menu {
     position: fixed; 
     z-index: 1;
@@ -162,8 +169,11 @@
     height: 100vh;
     padding-top: 21px;
     padding-bottom: 48px;
-    
-    .container {
+    @media screen and (min-width: 768px)
+ {
+    display: none;
+}
+ .container {
         overflow: auto;
         display: flex;
         flex-direction: column;
@@ -172,6 +182,7 @@
         align-items: flex-start;
       }
 }
+  
 .mob-menu-top {
     width: 100%;
 }
