@@ -119,17 +119,27 @@
  }
 
 .soc {
-    display: block;
-    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
 }
 
-    @media screen and (min-width: 768px) {
+ @media screen and (min-width: 768px) {
     .soc{
          margin-top: 0;
-    }
-       
-    }
-    
+         align-items: center;
+
+    }   
+}
+
+@media screen and (min-width: 1200px){
+   .soc {
+    margin-top: 0;
+    display: block;
+    margin-left: 83px;
+} 
+}
+  
 .soc__join {
     margin-bottom: 20px;
     color: var(--primary-bg-color);
