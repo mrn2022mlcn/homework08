@@ -875,9 +875,10 @@ img {
   margin-top: 20px;
 }
 
-@media screen and (min-width: 768px) {
-  soc {
-    margin-right: 93px;
+@media screen and (min-width: 1200px) {
+  .address-content {
+    min-width: 230px;
+    text-align: left;
   }
 }
 .soc {
@@ -888,15 +889,14 @@ img {
 
 @media screen and (min-width: 768px) {
   .soc {
-    margin-top: 0;
     align-items: center;
   }
 }
 @media screen and (min-width: 1200px) {
   .soc {
     margin-top: 0;
-    display: block;
-    margin-left: 83px;
+    display: flex;
+    margin-right: 93px;
   }
 }
 .soc__join {
@@ -909,6 +909,11 @@ img {
   text-transform: uppercase;
 }
 
+@media screen and (min-width: 1200px) {
+  .soc-join {
+    margin-right: 93px;
+  }
+}
 .soc__list {
   display: flex;
   justify-content: center;
@@ -945,21 +950,22 @@ img {
   fill: var(--primary-bg-color);
 }
 
-.subscribe__post {
+.subcribe .subscribe__post {
   display: flex;
   flex-direction: column;
   margin-top: 60px;
 }
 @media screen and (min-width: 768px) {
-  .subscribe__post {
+  .subcribe .subscribe__post {
+    display: block;
     align-items: center;
   }
 }
 @media screen and (min-width: 1200px) {
-  .subscribe__post {
+  .subcribe .subscribe__post {
     margin-top: 0;
-    display: block;
-    margin-left: 83px;
+    display: flex;
+    margin-left: 93px;
   }
 }
 
@@ -974,6 +980,12 @@ img {
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 1200px) {
+  .form-wrap {
+    display: flex;
+    align-items: center;
+  }
+}
 .footer-btn__input {
   padding: 15px 16px;
   margin-right: 12px;
@@ -994,17 +1006,20 @@ img {
 @media screen and (min-width: 768px) {
   .footer-btn__input {
     width: 450px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer-btn__input {
     width: 358px;
+    margin-right: 12px;
   }
 }
 
 .footer-btn__sign {
   display: inline-flex;
-  margin-top: 20px;
   margin-left: 12px;
   padding-left: 29px;
   padding-right: 13px;
