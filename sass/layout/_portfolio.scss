@@ -1,16 +1,42 @@
 .projects {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media screen and (min-width: 1200px) {
     padding-top: 94px;
-    padding-bottom: 94px;
+    padding-bottom: 94px;  
+    }  
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .button-list {
     display: flex; 
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+    @media screen and (min-width:768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    }
+    @media screen and (min-width: 1200px) {
     flex-wrap: nowrap;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 50px;
+    margin-bottom: 50px; 
+    }
 } 
 
+.btn-item:not(:last-child) {
+margin-right: 8px;
+}
+.btn-item {
+    margin-bottom: 15px;
+}
 .projects-btn {
     padding: 6px 22px 6px 22px;
     border-radius: 4px;
@@ -83,7 +109,10 @@
 }
 
 .portfolio-link {
-    display: block;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    // display: block;
     text-decoration: none;
     transition-property: box-shadow;
     transition-duration: 250ms;
@@ -114,18 +143,29 @@
 }
 
 .projects-list  {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -30px;
+    display: block;
     margin-bottom: -30px;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -30px;
+    }
 }
 
 .projects-items {
-    flex-basis: calc((100% - 90px) / 3);
+    width: 100%;
+    margin-bottom: 30px;
+    @media screen and (min-width: 768px) {
+    width: calc(100% / 2 - 30px);
+    margin-left: 30px;
+}
+@media screen and (min-width: 1200px) {
+    width: calc(100% / 3 - 30px);
     margin-left: 30px;
     margin-bottom: 30px;
 }
-
+}
+    
 .submenu {
     position: relative;
     overflow: hidden;

@@ -427,7 +427,7 @@
 <!-- Постоянные клиенты -->
 
  <section class="clients">
-   
+   <div class="container">
         <h2 class="clients-title">Постоянные клиенты</h2>
         <ul class="clients-list list">
             <li class="clients-item">
@@ -473,7 +473,7 @@
                 </a>
             </li>
         </ul>
- 
+    </div>
   </section>
 </main> 
  
@@ -485,10 +485,14 @@
     <a href="/" class="logo address-content__logo"><span>Web</span>Studio</a>
     <address class="address-content__text">
       <p class="address-text">г. Киев, пр-т Леси Украинки, 26</p>
-            <a href="mailto:info@devstudio.com" class="address-content__link">info@devstudio.com</a><br>
-        
+      <ul class="address-list list">
+      <li class="address-item">
+          <a href="mailto:info@devstudio.com" class="address-content__link">info@devstudio.com</a>
+        </li>
+        <li class="address-item">
             <a href="tel:+380961111111" class="address-content__link">+38 096 111 11 11</a>
-       
+       </li> 
+    </ul>  
      </address>
     </div>
     <div class="soc">
@@ -536,10 +540,11 @@
         placeholder="E-mail" 
         /> 
             <button type="submit" 
-            class="footer-btn__sign"><svg class="footer-btn__icon-send" width="24" height="24">
-                <use href="./images/icon-sendopt.svg#icon-icon-send"></use>
-            </svg>Подписаться
-             </button>
+            class="footer-btn__sign">Подписаться
+            <svg width="24" height="24">
+                <use href="./images/icon-sendopt.svg#icon-icon-send" class="footer-btn__icon-send"></use>
+            </svg>
+            </button>
         </form>
     </div>
     
