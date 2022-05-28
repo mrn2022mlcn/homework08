@@ -34,7 +34,13 @@
         fill: var(--accent-color);
     }
 }
-   
+
+@media screen and (min-width: 768px) {
+    .menu-open-btn {
+        display: none;
+    }
+}
+
 .icon-open-btn {
     width: 40px;
     height: 40px;
@@ -42,6 +48,9 @@
 
 .navigation {
     display: none;
+    @media screen and (min-width: 768px) {
+        display: block;
+    }
 }
 .site-nav  {
     display: flex;
@@ -79,7 +88,7 @@
 }
 
 .current {
-    color: transparent;
+    color: var(--title-text-color);
 
     &:hover,
     &:focus {
@@ -105,11 +114,24 @@
 .contacts {
     display: flex;
 }  
+@media screen and (min-width: 768px) {
+    .contacts .header__contacts{
+        display: block;
+}
+}
 
 .site-contacts {
     display: none;
     margin-left: auto;
+@media screen and (min-width: 768px) {
+    display: block;
 }
+@media screen and (min-width: 1200px) {
+    display: flex;
+}
+}
+
+
 
 .site-contacts__item {
     transition-property: fill;
@@ -122,6 +144,12 @@
     & + & {
     margin-left: 30px;
 }
+}
+
+@media screen and (min-width: 768px) {
+    .site-contacts__item {
+    margin-bottom: 10px;
+    }
 }
 
 .site-contacts__link{
@@ -146,6 +174,9 @@
     height: 12px;
     margin-right: 10px;
     color: var(--primary-text-color);
+    @media screen and (min-width: 768px) {
+        margin-right: 8px;
+    }
 }
 
 .site-contacts__tel {
@@ -153,7 +184,11 @@
     height: 16px;
     margin-right: 10px;
     color: var(--primary-text-color);
+    @media screen and (min-width: 768px) {
+        margin-right: 8px;
+    }
 }
+
 .mob-menu .is-open {
     transform: translateX(0);
 }
@@ -165,7 +200,7 @@
     background-color: var(--primary-bg-color);
     width: 100vw;
     height: 100vh;
-    padding-top: 21px;
+    padding-top: 48px;
     padding-bottom: 48px;
     @media screen and (min-width: 768px)
  {
@@ -202,6 +237,12 @@
     &:hover,
     &:focus {
         fill: var(--accent-color);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .menu-close-btn {
+        display: none;
     }
 }
 

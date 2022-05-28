@@ -282,23 +282,20 @@
 
 <footer class="footer footer--font">
     <div class="container">
-
     <div class="address-content">
     <a href="/" class="logo address-content__logo"><span>Web</span>Studio</a>
     <address class="address-content__text">
-      г. Киев, пр-т Леси Украинки, 26
-     </address>
-
-     <ul class="address-content__contacts list">
-        <li class="address-content__item">
-            <a href="mailto:info@devstudio.com" class="address-content__link">info@devstudio.com</a><br>
+      <p class="address-text">г. Киев, пр-т Леси Украинки, 26</p>
+      <ul class="address-list list">
+      <li class="address-item">
+          <a href="mailto:info@devstudio.com" class="address-content__link">info@devstudio.com</a>
         </li>
-        <li class="address-content__item">
+        <li class="address-item">
             <a href="tel:+380961111111" class="address-content__link">+38 096 111 11 11</a>
-        </li> 
-     </ul>
+       </li> 
+    </ul>  
+     </address>
     </div>
-
     <div class="soc">
             <h3 class="soc__join">Присоединяйтесь</h3>
         <ul class="soc__list list">
@@ -332,12 +329,10 @@
             </li>
         </ul>
     </div>
-
     <div class="subscribe subscribe__post">
         <h3 class="subscribe__join">Подпишитесь на рассылку</h3>
         <form>
-    <div class="footer-btn__btn">
-
+            <div class="form-wrap">
         <label for="subscribe-mail"></label>
         <input
         type="email"
@@ -346,21 +341,20 @@
         id="subscribe-mail"
         placeholder="E-mail" 
         /> 
-
             <button type="submit" 
-            class="footer-btn__sign">Подписаться</button>
-         
-            <svg class="footer-btn__icon-send" width="24" height="24">
-                <use href="./images/icon-sendopt.svg#icon-icon-send"></use>
+            class="footer-btn__sign">Подписаться
+            <svg width="24" height="24">
+                <use href="./images/icon-sendopt.svg#icon-icon-send" class="footer-btn__icon-send"></use>
             </svg>
-      
-    </div>
+            </button>
+        </div>
         </form>
     </div>
     
     </div>
 </footer>
 
-  
+<script src="./js/menu.js"></script> 
+
 </body>
 </html>

@@ -953,7 +953,6 @@ img {
 .subcribe .subscribe__post {
   display: flex;
   flex-direction: column;
-  margin-top: 60px;
 }
 @media screen and (min-width: 768px) {
   .subcribe .subscribe__post {
@@ -977,6 +976,7 @@ img {
   line-height: 1.14;
   letter-spacing: 3%;
   text-transform: uppercase;
+  margin-top: 60px;
   margin-bottom: 20px;
 }
 
@@ -1020,9 +1020,10 @@ img {
 
 .footer-btn__sign {
   display: inline-flex;
-  margin-left: 12px;
   padding-left: 29px;
   padding-right: 13px;
+  margin-right: 12px;
+  margin-bottom: 20px;
   align-items: center;
   width: 200px;
   height: 50px;
@@ -1038,7 +1039,7 @@ img {
 }
 
 .footer-btn__icon-send {
-  margin-left: 10px;
+  margin-right: 28px;
   fill: var(--primary-bg-color);
 }
 
@@ -1077,6 +1078,11 @@ img {
   fill: var(--accent-color);
 }
 
+@media screen and (min-width: 768px) {
+  .menu-open-btn {
+    display: none;
+  }
+}
 .icon-open-btn {
   width: 40px;
   height: 40px;
@@ -1084,6 +1090,11 @@ img {
 
 .navigation {
   display: none;
+}
+@media screen and (min-width: 768px) {
+  .navigation {
+    display: block;
+  }
 }
 
 .site-nav {
@@ -1119,7 +1130,7 @@ img {
 }
 
 .current {
-  color: transparent;
+  color: var(--title-text-color);
 }
 .current:hover, .current:focus {
   color: var(--accent-color);
@@ -1144,9 +1155,24 @@ img {
   display: flex;
 }
 
+@media screen and (min-width: 768px) {
+  .contacts .header__contacts {
+    display: block;
+  }
+}
 .site-contacts {
   display: none;
   margin-left: auto;
+}
+@media screen and (min-width: 768px) {
+  .site-contacts {
+    display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .site-contacts {
+    display: flex;
+  }
 }
 
 .site-contacts__item {
@@ -1161,6 +1187,11 @@ img {
   margin-left: 30px;
 }
 
+@media screen and (min-width: 768px) {
+  .site-contacts__item {
+    margin-bottom: 10px;
+  }
+}
 .site-contacts__link {
   color: var(--primary-text-color);
   text-decoration: none;
@@ -1183,12 +1214,22 @@ img {
   margin-right: 10px;
   color: var(--primary-text-color);
 }
+@media screen and (min-width: 768px) {
+  .site-contacts__mail {
+    margin-right: 8px;
+  }
+}
 
 .site-contacts__tel {
   width: 10px;
   height: 16px;
   margin-right: 10px;
   color: var(--primary-text-color);
+}
+@media screen and (min-width: 768px) {
+  .site-contacts__tel {
+    margin-right: 8px;
+  }
 }
 
 .mob-menu .is-open {
@@ -1203,7 +1244,7 @@ img {
   background-color: var(--primary-bg-color);
   width: 100vw;
   height: 100vh;
-  padding-top: 21px;
+  padding-top: 48px;
   padding-bottom: 48px;
 }
 @media screen and (min-width: 768px) {
@@ -1243,6 +1284,11 @@ img {
   fill: var(--accent-color);
 }
 
+@media screen and (min-width: 768px) {
+  .menu-close-btn {
+    display: none;
+  }
+}
 .icon-close-btn {
   position: relative;
   align-items: center;
@@ -1656,6 +1702,7 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  white-space: nowrap;
   background: rgba(47, 48, 58, 0.8);
   color: var(--primary-bg-color);
 }
