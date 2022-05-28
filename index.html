@@ -207,19 +207,34 @@
   <ul class="service-list list">
      <li class="img-item">
          <div class="service-font">
-    <img src="./images/icon1.jpg" alt="Ноутбук" width="370" >
+    <img 
+    srcset="
+          ./images/service-desk-1x.jpg 1x,
+          ./images/service-desk-2x.jpg 2x
+          "
+    src="./images/icon1.jpg" alt="Ноутбук" width="370" >
     <p class="service-text">Десктопные приложения</p>
     </div>
      </li>
      <li class="img-item">
         <div class="service-font">
-        <img src="./images/icon2.jpg" alt="Смартфон" width="370">
+        <img 
+        srcset="
+          ./images/service-mob-1x.jpg 1x,
+          ./images/service-mob-2x.jpg 2x
+          "
+        src="./images/icon2.jpg" alt="Смартфон" width="370">
         <p class="service-text">Мобильные приложения</p>
     </div>
     </li>
     <li class="img-item">
         <div class="service-font">
-        <img src="./images/icon3.jpg" alt="Планшет" width="370" >
+        <img 
+        srcset="
+          ./images/service-design-1x.jpg 1x,
+          ./images/service-design-2x.jpg 2x
+          "
+        src="./images/icon3.jpg" alt="Планшет" width="370" >
         <p class="service-text">Дизайнерские решения</p>
     </div>
     </li>
@@ -233,7 +248,7 @@
     <h2 class="section-title">Наша команда</h2>
     <ul class="team-list list">
         <li class="team-item shadow">
-            <picture>
+            <!-- <picture>
                 <source
                 srcset="
           ./images/team-product-desk.jpg 1x,
@@ -254,9 +269,14 @@
           ./images/team-product2x.jpg 2x
           "
         media="(min-width: 320px)"
-          />
+          /> -->
         
           <img 
+          srcset="
+          ./images/team-product.jpg 1x,
+          ./images/team-product2x.jpg 2x
+          "
+
            src="./images/team-product.jpg" 
            alt="Игорь Демьяненко" 
            width="270">
