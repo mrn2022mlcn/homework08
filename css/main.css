@@ -398,8 +398,8 @@ img {
   padding: 40px;
   top: 50%;
   left: 50%;
-  width: 450px;
-  height: 609px;
+  width: 100vw;
+  height: 100vh;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   background-color: var(--primary-bg-color);
@@ -407,10 +407,16 @@ img {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
-    min-height: 581px;
+    height: 581px;
   }
 }
 .btn-modal-close {
@@ -629,7 +635,6 @@ img {
 
 .benefits-item {
   margin-bottom: 30px;
-  width: 450px;
 }
 @media screen and (min-width: 768px) {
   .benefits-item {
@@ -668,7 +673,6 @@ img {
 
 .benefits-text {
   margin-bottom: 30px;
-  width: 450px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
