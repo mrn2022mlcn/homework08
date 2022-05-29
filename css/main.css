@@ -1064,6 +1064,12 @@ img {
   margin-left: auto;
 }
 
+@media screen and (min-width: 768px) {
+  .container {
+    padding-left: 15px;
+    padding-bottom: 0px;
+  }
+}
 .menu-open-btn {
   display: flex;
   position: absolute;
@@ -1097,9 +1103,21 @@ img {
 .navigation {
   display: none;
 }
+@media screen and (max-width: 767px) {
+  .navigation {
+    display: none;
+  }
+}
 @media screen and (min-width: 768px) {
   .navigation {
     display: block;
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .navigation {
+    display: flex;
+    align-items: center;
   }
 }
 
