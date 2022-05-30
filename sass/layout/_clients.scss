@@ -13,19 +13,23 @@
              max-width: 768px;
         }
         @media screen and (min-width: 1200px) {
-            max-width: 1200px
+            max-width: 1200px;
+            
         }
     } 
     }
 
 .clients-title {
     margin-bottom: 30px;
-    font-weight: 700;
+    font-weight: 700px;
     font-size: 28px;
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-text-color);  
+    @media screen and (min-width: 1200px) {
+        font-size: 36px;
+    }
 }
     
 .clients-list {

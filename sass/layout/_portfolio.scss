@@ -7,6 +7,11 @@
     }  
 }
 
+.projects .container {
+    @media screen and (min-width:1200px) {
+        padding-top: 0px;
+    }
+}
 .button-list {
     display: flex; 
     flex-wrap: wrap;
@@ -19,18 +24,19 @@
     }
     @media screen and (min-width: 1200px) {
     flex-wrap: nowrap;
-    margin-right: auto;
     margin-left: auto;
-    margin-bottom: 50px; 
+    margin-right: auto;
+    margin-bottom: 50px;
     }
 } 
 
 .btn-item:not(:last-child) {
 margin-right: 8px;
 }
-.btn-item {
-    margin-bottom: 15px;
-}
+
+// .btn-item {
+//     margin-bottom: 15px;
+// }
 .projects-btn {
     padding: 6px 22px 6px 22px;
     border-radius: 4px;
@@ -120,6 +126,7 @@ margin-right: 8px;
 
 
 .container .projects-title {
+    font-family: "Roboto";
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -127,6 +134,7 @@ margin-right: 8px;
     color: var(--title-text-color);
     white-space: nowrap;
 }
+
 
 .container .projects-text {
     font-weight: 400;

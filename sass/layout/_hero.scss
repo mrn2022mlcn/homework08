@@ -73,15 +73,14 @@
 }
 
 .container__hero-title {
+
     margin-right: auto;
     margin-left: auto; 
     margin-bottom: 30px;
     color: var(--primary-bg-color);
-    max-width: 360px;
     font-weight: 900;
     font-size: 26px;
     line-height: 1.62;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     @media screen and (min-width: 768px) {
@@ -92,5 +91,5 @@
         line-height: 1.36;
         max-width: 700px;
     }
-}
+  }
 
