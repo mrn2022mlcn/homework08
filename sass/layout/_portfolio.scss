@@ -65,8 +65,12 @@ margin-right: 8px;
 .projects-btn {
     flex-basis: calc((100% - 50px) / 5);
 } 
+
 .btn-item {
     margin-bottom: 11px;
+    @media screen and (min-width: 768px) { 
+         margin-bottom: 0;   
+    }
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -105,11 +109,6 @@ margin-right: 8px;
 }
 }
 
-@media screen and (min-width: 768px) {
-    .btn-item {
-     margin-bottom: 0;   
-    } 
-}
 
 .portfolio {
     padding: 20px 24px 20px 24px;

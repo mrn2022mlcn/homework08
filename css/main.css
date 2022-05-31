@@ -1567,6 +1567,11 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 768px) {
+  .btn-item {
+    margin-bottom: 0;
+  }
+}
 .btn-item:hover, .btn-item:focus {
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
 }
@@ -1592,11 +1597,6 @@ img {
   margin-right: 8px;
 }
 
-@media screen and (min-width: 768px) {
-  .btn-item {
-    margin-bottom: 0;
-  }
-}
 .portfolio {
   padding: 20px 24px 20px 24px;
   border-right: 1px solid #EEEEEE;
