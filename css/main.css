@@ -1592,6 +1592,11 @@ img {
   margin-right: 8px;
 }
 
+@media screen and (min-width: 768px) {
+  .btn-item {
+    margin-bottom: 0;
+  }
+}
 .portfolio {
   padding: 20px 24px 20px 24px;
   border-right: 1px solid #EEEEEE;
