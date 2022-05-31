@@ -902,6 +902,7 @@ img {
   }
 }
 .soc__join {
+  margin-top: 60px;
   margin-bottom: 20px;
   color: var(--primary-bg-color);
   font-family: var(--font-family);
@@ -910,12 +911,13 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-
 @media screen and (min-width: 1200px) {
-  .soc-join {
+  .soc__join {
+    margin-top: 0px;
     margin-right: 93px;
   }
 }
+
 .soc__list {
   display: flex;
   justify-content: center;
@@ -978,9 +980,15 @@ img {
   line-height: 1.14;
   letter-spacing: 3%;
   text-transform: uppercase;
+  margin-top: 60px;
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 1200px) {
+  .subscribe-join {
+    margin-top: 0px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .form-wrap {
     display: flex;
@@ -1066,14 +1074,11 @@ img {
 
 .menu-open-btn {
   display: flex;
-  position: absolute;
-  top: 0;
   right: 0;
   width: 40px;
   height: 40px;
   border: none;
   margin-left: auto;
-  margin-bottom: 8px;
   padding: 0;
   background-color: transparent;
   transition-property: fill;
