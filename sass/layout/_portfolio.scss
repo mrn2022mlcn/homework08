@@ -19,11 +19,9 @@
     }   
 }
 
-
 .button-list {
     display: flex; 
     flex-wrap: wrap;
-    margin-bottom: 25px;
     @media screen and (min-width:768px) {
     display: flex;
     justify-content: center;
