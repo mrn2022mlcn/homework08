@@ -980,7 +980,6 @@ img {
   line-height: 1.14;
   letter-spacing: 3%;
   text-transform: uppercase;
-  margin-top: 60px;
   margin-bottom: 20px;
 }
 
@@ -1074,6 +1073,7 @@ img {
 
 .menu-open-btn {
   display: flex;
+  top: 0;
   right: 0;
   width: 40px;
   height: 40px;
