@@ -1018,13 +1018,13 @@ img {
   .footer-btn__input {
     width: 358px;
     margin-right: 12px;
+    margin-bottom: 0px;
   }
 }
 
 .footer-btn__sign {
   display: inline-flex;
-  padding-left: 29px;
-  padding-right: 13px;
+  padding: 15px 16px;
   margin-right: 12px;
   align-items: center;
   width: 200px;
@@ -1046,15 +1046,19 @@ img {
 }
 
 .header {
+  padding-top: 16px;
+  padding-bottom: 16px;
   position: relative;
   background-color: var(--primary-bg-color);
   border-bottom: 1px solid #ECECEC;
 }
-.header .header .container {
-  display: flex;
-  align-items: center;
-}
 
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 21px;
+    padding-bottom: 0px;
+  }
+}
 .header .container {
   display: flex;
   align-items: center;
@@ -1062,11 +1066,6 @@ img {
   margin-left: auto;
 }
 
-@media screen and (min-width: 768px) {
-  .container {
-    padding: 0px, 15px;
-  }
-}
 .menu-open-btn {
   display: flex;
   position: absolute;
@@ -1535,7 +1534,6 @@ img {
 }
 
 .projects-btn {
-  margin-bottom: 15px;
   padding: 6px 22px 6px 22px;
   border-radius: 4px;
   border: none;
