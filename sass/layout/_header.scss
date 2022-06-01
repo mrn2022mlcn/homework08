@@ -1,4 +1,6 @@
 .header {
+    padding-top: 15px;
+    padding-bottom: 15px;
     position: relative;
     background-color: var(--primary-bg-color);
     border-bottom: 1px solid #ECECEC;
@@ -18,27 +20,12 @@
     margin-left: auto;
 }
 }
-// .head-nav {
-//     display: flex;
-//     align-items: center;
-//     
-// }
-
-// .container {
-//     width: 100%;
-//     padding-left: 15px;
-//     padding-right: 15px;
-//     margin: 0 auto;
-// }
-
-
-
 
 .menu-open-btn {
+    position: absolute;
     display: flex;
-    top: 0;
-    right: 0;
-    
+    top: 10px;
+    right: 15px;
     width: 40px;
     height: 40px;
     border: none;

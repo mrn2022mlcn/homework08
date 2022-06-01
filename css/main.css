@@ -920,11 +920,6 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-@media screen and (min-width: 768px) {
-  .soc__join {
-    margin-top: 0px;
-  }
-}
 
 .soc__list {
   display: flex;
@@ -1060,6 +1055,8 @@ img {
 }
 
 .header {
+  padding-top: 15px;
+  padding-bottom: 15px;
   position: relative;
   background-color: var(--primary-bg-color);
   border-bottom: 1px solid #ECECEC;
@@ -1078,9 +1075,10 @@ img {
 }
 
 .menu-open-btn {
+  position: absolute;
   display: flex;
-  top: 0;
-  right: 0;
+  top: 10px;
+  right: 15px;
   width: 40px;
   height: 40px;
   border: none;
