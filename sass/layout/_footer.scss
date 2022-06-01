@@ -116,11 +116,11 @@
 }
 
 .soc {
-    display: flex;
-    flex-direction: column;
-    margin-right: 93px;
+    // display: flex;
+    // flex-direction: column;
+    // margin-right: 93px;
     margin-bottom: 0;
-    text-align: left;
+    // text-align: left;
 }
 
  @media screen and (min-width: 768px) {
@@ -139,18 +139,6 @@
 } 
 }
   
-// .soc__join {
-    
-//     margin-bottom: 20px;
-//     color: var(--primary-bg-color);
-//     font-family: var(--font-family);
-//     font-size: 14px;
-//     line-height: 1.14;
-//     letter-spacing: 0.03em;
-//     text-transform: uppercase;
-
-// }
-
 .soc__join {
     margin-top: 60px;
     margin-bottom: 20px;
@@ -160,6 +148,9 @@
     line-height: 1.14;
     letter-spacing: .03em;
     text-transform: uppercase;
+    @media screen and (min-width: 768px) {
+        margin-top: 0;
+    }
 }
 
 .soc__list {
