@@ -886,12 +886,16 @@ img {
 @media screen and (min-width: 1200px) {
   .address-content {
     min-width: 230px;
+    margin-right: 70px;
     text-align: left;
   }
 }
 .soc {
   display: flex;
   flex-direction: column;
+  margin-right: 93px;
+  margin-bottom: 0;
+  text-align: left;
 }
 
 @media screen and (min-width: 768px) {
@@ -901,9 +905,9 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .soc {
-    margin-top: 0;
-    display: flex;
     margin-right: 93px;
+    margin-bottom: 0;
+    text-align: left;
   }
 }
 .soc__join {
@@ -919,13 +923,13 @@ img {
 @media screen and (min-width: 768px) {
   .soc__join {
     margin-top: 0px;
-    margin-right: 154px;
   }
 }
 
 .soc__list {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 0;
 }
 

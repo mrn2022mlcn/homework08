@@ -18,11 +18,27 @@
     margin-left: auto;
 }
 }
+// .head-nav {
+//     display: flex;
+//     align-items: center;
+//     
+// }
+
+// .container {
+//     width: 100%;
+//     padding-left: 15px;
+//     padding-right: 15px;
+//     margin: 0 auto;
+// }
+
+
+
 
 .menu-open-btn {
     display: flex;
     top: 0;
     right: 0;
+    
     width: 40px;
     height: 40px;
     border: none;
@@ -37,6 +53,7 @@
         fill: var(--accent-color);
     }
 }
+
 
 @media screen and (min-width: 768px) {
     .menu-open-btn {

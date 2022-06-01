@@ -108,14 +108,19 @@
 }
 @media screen and (min-width: 1200px) {
     .address-content {
-        min-width: 230px;
-        text-align: left;
-    }
+     min-width: 230px;
+    margin-right: 70px;
+    text-align: left;
+    
+}
 }
 
 .soc {
     display: flex;
     flex-direction: column;
+    margin-right: 93px;
+    margin-bottom: 0;
+    text-align: left;
 }
 
  @media screen and (min-width: 768px) {
@@ -127,9 +132,9 @@
 
 @media screen and (min-width: 1200px){
    .soc {
-    margin-top: 0;
-    display: flex;
     margin-right: 93px;
+    margin-bottom: 0;
+    text-align: left;
 
 } 
 }
@@ -143,15 +148,17 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    
 @media screen and (min-width: 768px ) {
         margin-top: 0px;
-        margin-right: 154px;
+        
+        
 }
 }
-
 .soc__list {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
+    align-items: center; 
     padding: 0; 
 }
 
