@@ -254,6 +254,15 @@
   
 .mob-menu-top {
     width: 100%;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.mob-menu-bottom {
+    width: 100%;
+    margin-top: 0;
+    padding-right: 25px;
+    padding-left: 25px;
 }
 
 .menu-close-btn {
@@ -287,21 +296,23 @@
     align-items: center;
 }
 
-.site-nav-mob__item  {
-    &:nth-child(1){
-        margin-bottom: 36px;
-    } 
+.site-nav-mob__item:not(:last-child) {
+    margin-bottom: 32px; 
 }
+//     &:nth-child(1){
+//         margin-bottom: 36px;
+//     } 
+// }
 
-.site-nav-mob__item {
-    &:nth-child(2) {
-      margin-bottom: 32px;  
-    }
-}
+// .site-nav-mob__item {
+//     &:nth-child(2) {
+//       margin-bottom: 32px;  
+//     }
+// }
 
 .site-nav-mob__item {
     &:nth-child(3) {
-      margin-bottom: 302px;  
+      margin-bottom: 250px;  
     }
 }
 
@@ -329,7 +340,7 @@
     &:nth-child(1) {
        margin-bottom: 32px;
         .mob-site-contacts__link {
-    font-size: 34px;
+    font-size: 15px;
     line-height: 1.18;
     text-decoration: none;
     color: var(--accent-color);
@@ -341,7 +352,7 @@
     &:nth-child(2) {
        margin-bottom: 64px;
        .mob-site-contacts__link {
-        font-size: 24px;
+        font-size: 15px;
         line-height: 1.17;
         text-decoration: none;
         color: var(--primary-text-color);
@@ -353,23 +364,35 @@
 .mob-soc__list {
     display: flex;
     position: relative;
+    padding-left: 25px;
+    padding-right: 25px;
   }
   
-  .mob-soc__link {
-    font-size: 18px;
+.mob-soc__link {
+    font-size: 10px;
     line-height: 1.22;
     text-decoration: none;
     color: var(--accent-color);
   }
 
-  .mob-soc__item {
-      padding: 10px;
-      &:not(:last-child) {
+.mob-soc__item:not(:last-child) {
           border-right: 1px solid
           rgba(33, 33, 33, 0.2);
-      }
-    }
+            padding-left: 10px;
+            padding-right: 10px;
+}
+      
+.mob-soc__item:first-child {
+    border-right: 1px solid
+    rgba(33, 33, 33, 0.2);
+      padding-left: 0;
+      padding-right: 10px;
+}
 
+.mob-soc__item:last-child {
+      padding-left: 10px;
+      padding-right: 0;
+}
    
 .no-scroll { 
         overflow: hidden;
