@@ -76,8 +76,11 @@
 }
 
 .benefits-text { 
-    margin-bottom: 30px;
-    // width: 450px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color); 
     @media screen and (min-width:768px)  {
         width: 355px;
         text-align: left; 
@@ -86,10 +89,7 @@
         width: 270px;
         text-align: left; 
     }
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: var(--primary-text-color);
 }
+    
+   
 

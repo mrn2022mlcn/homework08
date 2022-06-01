@@ -156,7 +156,10 @@
 
 .check-text {
     margin-top: 0;
-    font-size: 14px;
+    font-size: 12px;
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+    }
     line-height: 1.71;
     letter-spacing: 0.03em;
     align-items: center;
@@ -171,7 +174,6 @@
     0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     margin-right: 8px;
-
 }
 }
 

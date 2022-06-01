@@ -1,13 +1,10 @@
 .header {
-    padding-top: 16px;
-    padding-bottom: 16px;
     position: relative;
     background-color: var(--primary-bg-color);
     border-bottom: 1px solid #ECECEC;
 }
 @media screen and (min-width:768px) {
     .header {
-        padding-top: 21px;
         padding-bottom: 0px;
     }
 }
@@ -195,6 +192,12 @@
 @media screen and (min-width: 768px) {
     .site-contacts__link {
     font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .site-contacts__link {
+    font-size: 14px;
     }
 }
 

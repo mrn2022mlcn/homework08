@@ -520,12 +520,17 @@ img {
 
 .check-text {
   margin-top: 0;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   align-items: center;
   color: var(--primary-text-color);
   display: flex;
+}
+@media screen and (min-width: 1200px) {
+  .check-text {
+    font-size: 14px;
+  }
 }
 .check-text::before {
   content: "";
@@ -664,7 +669,6 @@ img {
 }
 
 .benefits-text {
-  margin-bottom: 30px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -721,6 +725,7 @@ img {
 @media screen and (min-width: 1200px) {
   .clients-title {
     font-size: 36px;
+    margin-bottom: 50px;
   }
 }
 
@@ -914,7 +919,7 @@ img {
 @media screen and (min-width: 768px) {
   .soc__join {
     margin-top: 0px;
-    margin-right: 93px;
+    margin-right: 154px;
   }
 }
 
@@ -937,7 +942,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 10px;
+  margin-right: 10px;
   background-color: rgba(255, 255, 255, 0.1);
   transition-property: background-color, fill;
   transition-duration: 250ms;
@@ -1031,7 +1036,6 @@ img {
 .footer-btn__sign {
   display: inline-flex;
   padding: 15px 16px;
-  margin-right: 12px;
   align-items: center;
   width: 200px;
   height: 50px;
@@ -1052,8 +1056,6 @@ img {
 }
 
 .header {
-  padding-top: 16px;
-  padding-bottom: 16px;
   position: relative;
   background-color: var(--primary-bg-color);
   border-bottom: 1px solid #ECECEC;
@@ -1061,7 +1063,6 @@ img {
 
 @media screen and (min-width: 768px) {
   .header {
-    padding-top: 21px;
     padding-bottom: 0px;
   }
 }
@@ -1241,6 +1242,11 @@ img {
 @media screen and (min-width: 768px) {
   .site-contacts__link {
     font-size: 12px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .site-contacts__link {
+    font-size: 14px;
   }
 }
 .site-contacts__mail {
@@ -1780,6 +1786,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .section-title {
+    margin-bottom: 50px;
     font-size: 36px;
     line-height: 1.18;
   }
