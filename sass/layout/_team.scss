@@ -69,8 +69,11 @@
 
 .team-container {
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 24px;
     background-color: var(--primary-bg-color);
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 30px; 
+    }
 } 
 
 .team-soc-list {
