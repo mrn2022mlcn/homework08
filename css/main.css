@@ -668,6 +668,7 @@ img {
 }
 
 .benefits-text {
+  margin-bottom: 30px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -1057,9 +1058,14 @@ img {
 .header {
   padding-top: 15px;
   padding-bottom: 15px;
-  position: relative;
+  position: absolute;
+  width: 100%;
   background-color: var(--primary-bg-color);
   border-bottom: 1px solid #ECECEC;
+}
+.header .container {
+  display: flex;
+  align-items: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -1068,13 +1074,6 @@ img {
     padding-bottom: 0px;
   }
 }
-.header .container {
-  display: flex;
-  align-items: center;
-  margin-right: auto;
-  margin-left: auto;
-}
-
 .menu-open-btn {
   position: absolute;
   display: flex;
@@ -1382,6 +1381,7 @@ img {
 
 .mob-site-contactstel__link {
   margin-bottom: 32px;
+  font-weight: 500;
   font-size: 34px;
   color: var(--accent-color);
   text-decoration: none;
@@ -1394,6 +1394,7 @@ img {
 
 .mob-site-contactsmail__link {
   margin-bottom: 64px;
+  font-weight: 500;
   font-size: 34px;
   color: var(--primary-text-color);
   text-decoration: none;
@@ -1410,6 +1411,7 @@ img {
 
 .mob-soc__link {
   font-size: 18px;
+  font-weight: 500;
   line-height: 1.22;
   text-decoration: none;
   color: var(--accent-color);
@@ -1480,7 +1482,6 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    padding: 200px auto;
     background-position: center;
     background-size: cover;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-desktop.jpg);
@@ -1492,6 +1493,12 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
 .container {
   display: block;
 }
@@ -1748,7 +1755,7 @@ img {
 @media screen and (min-width: 1200px) {
   .service {
     display: flex;
-    padding-top: 74px;
+    padding-top: 94px;
     padding-bottom: 94px;
   }
 }
