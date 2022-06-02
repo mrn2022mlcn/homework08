@@ -1336,6 +1336,7 @@ img {
 
 .mob-menu-top {
   width: 100%;
+  flex-grow: 1;
 }
 
 .site-nav-mob__item:not(:last-child) {
@@ -1392,7 +1393,7 @@ img {
 }
 
 .mob-site-contactsmail__link {
-  margin-bottom: 0px;
+  margin-bottom: 64px;
   font-size: 34px;
   color: var(--primary-text-color);
   text-decoration: none;
