@@ -1058,8 +1058,6 @@ img {
 .header {
   padding-top: 15px;
   padding-bottom: 15px;
-  position: absolute;
-  width: 100%;
   background-color: var(--primary-bg-color);
   border-bottom: 1px solid #ECECEC;
 }
