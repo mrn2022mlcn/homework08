@@ -255,18 +255,6 @@
     }
 }
 
-.mob-menu-top {
-    width: 100%;
-    padding-right: 25px;
-    padding-left: 25px;
-}
-
-.mob-menu-bottom {
-    width: 100%;
-    padding-right: 25px;
-    padding-left: 25px;
-}
-
 .menu-close-btn {
     display: flex;
     position: absolute;
@@ -298,55 +286,89 @@
     align-items: center;
 }
 
+
+.mob-menu-top {
+    width: 100%;
+    padding-right: 25px;
+    padding-left: 25px;
+    
+}
+
 .site-nav-mob__item:not(:last-child) {
     margin-bottom: 32px; 
 }
 
-
-.site-nav-mob__link .currents {
-    color: #188CE8;
-}
-
-.site-nav-mob__link {
+.site-nav-mobstudio__link {
     text-decoration: none;
     font-weight: 500;
     font-size: 40px;
     line-height: 1.17;
     letter-spacing: 0.02em;
-    color: #212121;
+    color: var(--accent-color);
+    @media screen and (max-width: 320px) {
+        font-size: 20px;
+    }
 }
 
-
-.mob-site-contactstel__item  {
-       margin-bottom: 32px;
-       text-decoration: none;
-       font-weight: 500;
-       font-size: 24px;
-       line-height: 0.85;
-       letter-spacing: 0.02em;
-       color: var(--accent-color)
-}
-
-.mob-site-contactsmail__item {
+.site-nav-mob__link {
     margin-bottom: 32px;
     text-decoration: none;
     font-weight: 500;
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 40px;
+    line-height: 1.17;
     letter-spacing: 0.02em;
-    color: var(--primary-text-color);
+    color: var(--title-text-color);
+    @media screen and (max-width: 320px) {
+        font-size: 20px;
     }
+}
 
+
+
+.mob-menu-bottom {
+    width: 100%;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+ 
+.mob-site-contacts__item:not(:last-child) {
+    margin-bottom: 32px; 
+}
+
+.mob-site-contactstel__link {
+    margin-bottom: 32px;
+    font-size: 34px;
+    color: var(--accent-color);
+    text-decoration: none;
+    @media screen and (max-width: 320px) {
+        font-size: 17px;
+    }
+}
+
+.mob-site-contactsmail__link {
+    margin-bottom: 0px;
+    font-size: 34px;
+    color: var(--primary-text-color);
+    text-decoration: none;
+    @media screen and (max-width: 320px) {
+        font-size: 17px;
+    }
+}
 
 .mob-soc__list {
     display: flex;
+    padding-right: 25px;
+    padding-left: 25px;
   }
   
 .mob-soc__link {
-    font-size: 10px;
+    font-size: 18px;
     line-height: 1.22;
     text-decoration: none;
     color: var(--accent-color);
+    @media screen and (max-width: 320px) {
+        font-size: 10px;
+    }
   }
 
 .mob-soc__item {
