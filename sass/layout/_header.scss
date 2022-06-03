@@ -118,15 +118,13 @@
 }
 }
 
-.header__contacts {
+.site-contacts {
+    display: flex;
     margin-left: auto;
 }
-
-.contacts {
-    display: flex;
-}  
+ 
 @media screen and (min-width: 768px) {
-    .contacts .header__contacts{
+    .site-contacts {
         display: block;
 }
 }
